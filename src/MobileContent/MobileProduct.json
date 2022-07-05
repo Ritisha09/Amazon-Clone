@@ -7,7 +7,7 @@
         "EMI": "2,401",
         "delivery": "Wednesday, August 18",
         "status": "Out of Stock",
-        "price": "34,999"
+        "price": "34999"
     },
     {
         "id": 1234562,
@@ -17,7 +17,7 @@
         "EMI": "2,401",
         "delivery": "Saturday, August 21",
         "status": "In Stock",
-        "price": "36,990"
+        "price": "36990"
     },
     {
         "id": 1234563,
@@ -27,7 +27,7 @@
         "EMI": "2,401",
         "delivery": "Monday, August 16",
         "status": "Out of Stock",
-        "price": "1,29,900"
+        "price": "129900"
     },
     {
         "id": 1234564,
@@ -37,7 +37,28 @@
         "EMI": "2,401",
         "delivery": "Thursday, August 25",
         "status": "In Stock",
-        "price":"13,999"
+        "price":"13999"
+    },
+    {
+        "id": 1234565,
+        "image": "https://m.media-amazon.com/images/I/415CE-T-xNL.jpg",
+        "title": "Vivo V23 5G (Sunshine Gold, 8GB RAM 128GB Storage)",
+        "rating": 4,
+        "EMI": "2,401",
+        "delivery": "Saturday, August 27",
+        "status": "In Stock",
+        "price":"29990"
+    },
+    {
+        "id": 1234566,
+        "image": "https://m.media-amazon.com/images/I/716uVx3Wr5L._AC_UY218_.jpg",
+        "title": "OnePlus 9 5G (Arctic Sky,12GB RAM, 256GB Storage)",
+        "rating": 4.5,
+        "EMI": "2,401",
+        "delivery": "Monday, July 4",
+        "status": "In Stock",
+        "price":"42999"
     }
 ]
+
 

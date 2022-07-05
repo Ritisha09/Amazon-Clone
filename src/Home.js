@@ -2,7 +2,7 @@ import React from 'react'
 import AddBanner from './AddBanner';
 import AddBanner2 from './AddBanner2';
 import './Home.css'
-import Product from "./Product"
+//import Product from "./Product"
 
 function Home() {
   return (

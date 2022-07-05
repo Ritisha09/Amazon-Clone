@@ -11,15 +11,41 @@
 
 .Right_Side{
     height: 100%;
-    width: 280px;
+    width: 80vw;
     display:flex;
+    flex-wrap: wrap;
+   
     
 }
+
+.mobileProduct{
+    width: 230px;
+    margin: 25px;
+    /* border: 1px solid;  */
+}
+
+.mobile_title{
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: bold !important;
+}
+
+.mobile_rating{
+    display: flex;
+}
+.mobile_price{
+    color: #a13807;
+    font-size: 20px;
+    font-weight: bold;
+}  
+
+
 
 .mobileProduct_image{
     height: 500px;
     margin-left: 120px ;
     margin-top:100px;
+    
 }
 
 .mobileProduct_detail{
@@ -52,38 +78,16 @@
 .addToCart{
     background-color: #FFD712;
     margin-top: 30px !important;
-
 }
+
 .buyNow{
     background-color: #FFA41B;
-
 }
 
 
-
-.mobileProduct{
-    width: 230px;
-    margin: 30px;
-}
 .product_button{
     background-color: #d8ab2e;
     border: 1px solid #a13807;
     border-radius: 8px 8px 8px 8px;
     
 }
-
-.mobile_title{
-    font-size: 16px !important;
-    line-height: 24px !important;
-    font-weight: bold;
-}
-
-.mobile_rating{
-    display: flex;
-}
-.mobile_price{
-    color: #a13807;
-    font-size: 20px;
-    font-weight: bold;
-}  
-

@@ -1,8 +1,8 @@
-import React, { useState} from 'react'
+import React from 'react'
 import LeftSide from './LeftSide'
 import RightSide from './RightSide'
 import "./MobileContent.css"
-import MobileProduct from './MobileProduct.json'
+//import MobileProduct from './MobileProduct.json'
 
 function MobileContent() {
   

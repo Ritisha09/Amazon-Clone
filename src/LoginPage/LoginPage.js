@@ -5,9 +5,11 @@ import './LoginPage.css'
 function LoginPage() {
   return (
       <div className="login">
+          <Link to = "">
           <div className="login_logo">
             <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png" alt="" width = "100px"/>
           </div>
+          </Link>
 
           <div className="login_container">
             <h1>Sign-in</h1>

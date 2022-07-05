@@ -1,29 +1,62 @@
 // import logo from './logo.svg';
 import React from "react";
-import {BrowserRouter as Router,Switch,Route,Link, useRouteMatch, useParams} from "react-router-dom";
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import './App.css';
-import Checkout from './CheckoutPage/Checkout';
+import Cart from './CartPage/Cart';
 import ElectronicsContent from "./ElectronicsContent/ElectronicsContent";
 import Header from './Header';
 import Home from './Home';
 import LoginPage from "./LoginPage/LoginPage";
 import MobileContent from './MobileContent/MobileContent';
-import File from './File';
+// import File from './File';
 import CartContextProvider from "./Context/CartContext";
-import MobileProducts from "./MobileContent/MobileProducts";
+import MobileProducts from './MobileContent/MobileProducts.js'
 
 function App(){
+  
+  //const [products, setProduct]  = useState(MobileProduct);
+  
+  //  const fetch = async () => {
+  //    const {data} = await MobileProduct.mob();
+  //    console.log(2)
+  //    setProduct(data);
+  //  }
+
+  //  useEffect(() => {
+  //   fetch();
+  //  },[])
+
+  // console.log(products)
+
+
+  
+  // const fs = require('fs');
+  // fs.readFile('./MobileContent/MobileProduct.json', 'utf-8', (err, jsonString) => {
+  //   if (err) {
+  //     console.log(err);
+  //   }else{
+  //     const data = JSON.parse(jsonString);
+  //     console.log(data);
+  //   }
+  // })
+
   return (
-     
+    
+
      <Router>
       <div className="App">
         {/* <Header /> */}
+        {/* <Cart /> */}
+        {/* <Cart_Info /> */}
+
         {/* <File /> */}
         {/* <MobileContent/> */}
         
         {/* <MobileProducts/> */}
 
-           <Switch>
+        
+        <CartContextProvider > 
+          <Switch>
             <Route exact path = "/mobile">
               <Header />
               <MobileContent/>
@@ -41,7 +74,7 @@ function App(){
 
             <Route exact path ="/cart"> 
               <Header />
-              <Checkout/>
+              <Cart/>
             </Route>
 
             <Route exact path ="/login"> 
@@ -52,7 +85,9 @@ function App(){
               <Header />
               <Home />
             </Route> 
-          </Switch>  
+          </Switch> 
+          
+         </CartContextProvider> 
        
       </div>
     </Router>

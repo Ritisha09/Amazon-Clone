@@ -1,12 +1,24 @@
-import React from 'react'
+import React , { useState, useContext } from 'react'
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
 // import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import MobileProduct from './MobileContent/MobileProduct.json'
+//import { getFormControlUnstyledUtilityClasses } from '@mui/base';
+//import {product} from './MobileContent/product'
+import { CartContext } from './Context/CartContext'
 
 
 function Header() {
+
+    
+  //const [products, setProduct]  = useState( MobileProduct);
+  const {totalItem} =  useContext(CartContext);
+
+//   console.log(99)
+//   console.log(products)
+//   console.log(products.id)
   return (
     <>
     
@@ -66,7 +78,7 @@ function Header() {
 
             <div className="header_basketItem">
                 <span className="header_optionLineOne">Cart</span>
-                <span className="header_optionLineTwo header_basketCount">0</span>
+                <span className="header_optionLineTwo header_basketCount">{totalItem}</span>
             </div>
         </div>
     </div>

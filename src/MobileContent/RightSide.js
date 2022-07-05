@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState} from 'react'
+import React from 'react'
 import "./MobileContent.css"
 // import MobileProduct from './MobileProduct'
 import MobileProduct from './MobileProduct.json'
@@ -29,6 +29,7 @@ function RightSide() {
 
   return (
     <div className = "Right_Side">
+      
        {
         MobileProduct.map(MobileProduct => {
           return(
@@ -55,6 +56,7 @@ function RightSide() {
           )
         })
       } 
+      
       
 
 
