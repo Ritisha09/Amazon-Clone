@@ -9,7 +9,7 @@ function Subtotal() {
   return (
     <div className='subtotal'>
        <div className= 'subtotal_detail'>
-            <div style = {{fontSize: "25px"}}> SubTotal ( {totalItem} items): 
+            <div style = {{fontSize: "25px"}}> SubTotal ( {totalItem()} items): 
               <div>
                 <b>₹ {totalAmount()} </b>
               </div>

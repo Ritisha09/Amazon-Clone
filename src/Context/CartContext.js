@@ -100,9 +100,21 @@ class CartContextProvider extends Component{
         item: MobileProduct,
         item_cart: existingCart,
         //totalAmount : 0,
-        totalItem: cart_size,
-        //dispatch: () => {}
+        //totalItem: cart_size,
     }
+
+    removeFromCart = (product_id) => {
+        console.log(product_id)
+        //let item_list = this.state.item_cart;
+        let item_arr = this.state.item_cart.filter(mobile => mobile.id != product_id)
+        
+        console.log(item_arr)
+        this.setState( {item_cart: item_arr});
+        this.setState( {totalItem: this.state.item_cart.length})
+
+        //this.saveToLocalCache();
+        console.log('cart product', this.state.item_cart);
+     }
 
     addToCart = (product) => {
         let itemList = this.state.item_cart;
@@ -124,18 +136,12 @@ class CartContextProvider extends Component{
         return price;
     }
 
-    removeFromCart = (product_id) => {
-        console.log(product_id)
-        //let item_list = this.state.item_cart;
-        let item_arr = this.state.item_cart.filter(mobile => mobile.id != product_id)
-        
-        console.log(item_arr)
-        this.setState( {item_cart: item_arr});
-        this.setState( {totalItem: this.state.item_cart.length})
-
-        //this.saveToLocalCache();
-        console.log('cart product', this.state.item_cart);
-     }
+    
+    totalItem = () => {
+        let size = this.state.item_cart.length;
+        this.saveToLocalCache();
+        return size;
+    }
 
      emptyCart = () => {
         //let item_list = this.state.item_cart;
@@ -158,7 +164,7 @@ class CartContextProvider extends Component{
             <CartContext.Provider 
                 value= {{
                     item: this.state.item,
-                    totalItem: this.state.totalItem,
+                    totalItem: this.totalItem,
                     item_cart: this.state.item_cart,
                     addToCart: this.addToCart,
                     totalAmount: this.totalAmount,

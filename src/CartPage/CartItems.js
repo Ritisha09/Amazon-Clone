@@ -11,7 +11,7 @@ function CartItems({arr}) {
     <div className= "cartItems">
       {arr.map(item => { 
         return (
-          <div className='item' key = {item.id + '/' + totalItem} >
+          <div className='item' key = {item.id + '/' + totalItem()} >
             
             <img src={item.image} alt="" className="cartItem_image" />
             <div className="cartItem_detail">

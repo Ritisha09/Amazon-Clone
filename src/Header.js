@@ -78,7 +78,7 @@ function Header() {
 
             <div className="header_basketItem">
                 <span className="header_optionLineOne">Cart</span>
-                <span className="header_optionLineTwo header_basketCount">{totalItem}</span>
+                <span className="header_optionLineTwo header_basketCount">{totalItem()}</span>
             </div>
         </div>
     </div>
