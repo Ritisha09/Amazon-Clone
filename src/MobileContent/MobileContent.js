@@ -6,14 +6,7 @@ import "./MobileContent.css"
 
 function MobileContent() {
   
-  // const[cart,setCart] = useState()
-  // const addToCart = async function (mobId, qty) {
-  //   const response = await MobileProduct.add(mobId, qty)
-  //   console.log(response)
-  // }
-
-  //addToCart ={addToCart}
-
+ 
   return (
     <div style = {{display: "flex"}} className = "Mobile_Content">
       <div>
