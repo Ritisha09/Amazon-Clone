@@ -12,20 +12,19 @@ class CartContextProvider extends Component{
     state = {
         item: MobileProduct,
         item_cart: existingCart,
-        //totalAmount : 0,
-        //totalItem: cart_size,
+       
     }
 
     removeFromCart = (product_id) => {
         console.log(product_id)
-        //let item_list = this.state.item_cart;
+        
         let item_arr = this.state.item_cart.filter(mobile => mobile.id != product_id)
         
         console.log(item_arr)
         this.setState( {item_cart: item_arr});
         this.setState( {totalItem: this.state.item_cart.length})
 
-        //this.saveToLocalCache();
+        /this.saveToLocalCache();
         console.log('cart product', this.state.item_cart);
      }
 
