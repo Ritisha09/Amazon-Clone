@@ -6,35 +6,11 @@ import Subtotal from './Subtotal'
 import { CartContext } from '../Context/CartContext'
 
 
-{/*
-const Cart = () => {
-const {item} = useContext(CartContext);
-  return(
-    <CartItems arr = {item} />
-    // <div>
-    //   {
-    //      item.map((mob_item) => {
-    //       return (
-    //         <div>
-    //            {mob_item.id}
-    //         </div>
-    //       )
-    //      })
-    //   }
-    // </div>
-    
-   
-  )
-  //console.log({MobileProduct})
-  
-}
-*/}
+
 
 function Cart() {
 
   const {item_cart} =  useContext(CartContext);
-
-  //const {item} = useContext(CartContext);
 
   return (
     <div className = "cart">
@@ -56,4 +32,3 @@ function Cart() {
 }
 
 export default Cart
-// https://images-eu.ssl-images-amazon.com/images/G/31/img21/OHL_HMT/FDFO/1080x140.jpg
